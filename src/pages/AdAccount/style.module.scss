@@ -1,0 +1,30 @@
+.btn {
+    margin-bottom: 20px;
+    float: right;
+}
+
+.btn-excel {
+    margin-right: 10px;
+}
+
+.btn-ok {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.center-cell {
+    vertical-align: middle;
+}
+
+.horizontal-center-cell {
+    display: table-cell;
+    text-align: center;
+    padding: 0 !important;
+}
+
+.select-system-item {
+    min-width: 200px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+}

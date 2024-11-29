@@ -1,0 +1,19 @@
+.btn-list {
+    display: inline-flex;
+    column-gap: 15px;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.img-logo {
+    width: 250px;
+    height: auto;
+    object-fit: cover;
+}

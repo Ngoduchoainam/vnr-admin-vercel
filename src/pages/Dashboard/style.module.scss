@@ -1,0 +1,19 @@
+.container {
+    width: 100%;
+    height: calc(100vh - 195px);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.item:last-child {
+    grid-column: span 2;
+}
+
+.range-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
