@@ -19,8 +19,8 @@ const userApi = {
         return axiosInstance.post(url, data);
     },
     updateSystemUser: (data: TSystemUser) => {
-        const url = "/users/system";
-        return axiosInstance.put(url, data);
+        const url = "/update/users/system";
+        return axiosInstance.post(url, data);
     },
     getListBmUser: (params?: {
         pageIndex?: number;
@@ -37,8 +37,8 @@ const userApi = {
         return axiosInstance.post(url, data);
     },
     updateBmUser: (data: TBmUserField) => {
-        const url = "/users";
-        return axiosInstance.put(url, data);
+        const url = "/update/users";
+        return axiosInstance.post(url, data);
     },
     deleteUser: (id: string) => {
         const url = `/users/${id}`;

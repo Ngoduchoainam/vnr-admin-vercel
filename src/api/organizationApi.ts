@@ -14,8 +14,8 @@ const organizationApi = {
         return axiosInstance.get(url, { params });
     },
     updateOrganization: (data: TSystemField) => {
-        const url = "/organizations";
-        return axiosInstance.put(url, data);
+        const url = "/update/organizations";
+        return axiosInstance.post(url, data);
     },
     deleteOrganization: (id: string) => {
         const url = `/organizations?id=${id}`;

@@ -16,8 +16,8 @@ const groupApi = {
         return axiosInstance.get(url, { params });
     },
     updateGroup: (data: TypeTeamField) => {
-        const url = "/groups";
-        return axiosInstance.put(url, data);
+        const url = "/update/groups";
+        return axiosInstance.post(url, data);
     },
     deleteGroup: (id: string) => {
         const url = `/groups?id=${id}`;

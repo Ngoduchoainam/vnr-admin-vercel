@@ -73,6 +73,8 @@ const SystemAccount: FC<Props> = (props) => {
   ];
 
   const onFinish: FormProps<TSystemUser>['onFinish'] = (values) => {
+
+    console.log(77, "call here")
     setLoading({ ...loading, isBtn: true })
     if (dataRecord) {
       userApi.updateSystemUser({ ...values, id: dataRecord?.id }).then(() => {

@@ -15,8 +15,8 @@ const branchApi = {
         return axiosInstance.get(url, { params });
     },
     updateBranch: (data: TAgencyField) => {
-        const url = "/branches";
-        return axiosInstance.put(url, data);
+        const url = "/update/branches";
+        return axiosInstance.post(url, data);
     },
     deleteBranch: (id: string) => {
         const url = `/branches?id=${id}`;

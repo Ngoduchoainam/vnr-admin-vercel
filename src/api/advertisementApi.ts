@@ -72,12 +72,12 @@ const advertisementApi = {
         });
     },
     updateAdsAccount: (data: TCreateAdsAccount) => {
-        const url = "/adsAccount";
-        return axiosInstance.put(url, data);
+        const url = "/update/adsAccount";
+        return axiosInstance.post(url, data);
     },
     deleteAndRecoverAdsAccount: (id: string) => {
-        const url = `/adsAccount/${id}/toggle`;
-        return axiosInstance.put(url);
+        const url = `/update/adsAccount/${id}/toggle`;
+        return axiosInstance.post(url);
     },
     deleteAdsAccount: (id: string) => {
         const url = `/adsAccount/${id}`;

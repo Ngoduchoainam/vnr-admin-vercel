@@ -17,8 +17,8 @@ const employeeApi = {
         return axiosInstance.get(url, { params });
     },
     updateEmployee: (data: TMemberField) => {
-        const url = "/employee";
-        return axiosInstance.put(url, data);
+        const url = "/update/employee";
+        return axiosInstance.post(url, data);
     },
     deleteEmployee: (id: string) => {
         const url = `/employee?id=${id}`;
